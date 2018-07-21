@@ -1,0 +1,81 @@
+body
+{
+  padding: 0;
+  margin: 0;
+}
+html
+{
+  height: 100%;
+  width: 100vw;
+}
+/* Setting the positioning and width of the footer */
+#footer
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color:#712428;
+}
+#footer h2
+{
+  font-family:cursive;
+  font-size: 20px;
+
+}
+/* Creates space between the header buttons */
+#buttons
+{
+  padding-right: 2em;
+}
+/* Places the main body of the pages right below the header */
+.ui-content
+{
+margin-top: 3em;
+}
+/* Centers the header content  */
+.ui-bar
+{
+  text-align: center;
+  margin: 0 auto !important;
+}
+/* Defining the size of the map */
+#mapid
+{
+  height: 150vw;
+  width: 100vw;
+  margin-top: 4em;
+}
+.ui-page .ui-header
+{
+  background:#f9f2eb !important;
+
+}
+.ui-page .ui-header h2
+{
+  color:#712428;
+}
+.ui-page .ui-footer
+{
+  background:   #f9f2eb !important;
+}
+.ui-page .ui-content
+{
+  background:   #f9f2eb;
+  height: 155vw;
+  background-image: url("/img/CumbriaClassicCoaches.png") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.ui-page .ui-content .ui-btn
+{
+    color:#712428;
+    background: #f5f2ef;
+    border-color:#f7f2ee;
+}
+.ui-page .ui-header .ui-btn
+{
+  color:#712428;
+  background: #f5f2ef;
+  border-color:#f7f2ee;
+}

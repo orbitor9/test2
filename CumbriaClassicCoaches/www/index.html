@@ -1,0 +1,300 @@
+ <!DOCTYPE html>
+<html>
+<body onload="cumbriaClassicCoaches()">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>Cumbria Classic Coaches</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+
+   crossorigin=""/>
+        <script src="cordova.js"></script>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+
+   crossorigin=""></script>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <body>
+
+
+      <!--Map Page /// Openning Screen -->
+      <div data-role="page" id="map">
+          <div data-role="header" data-position="fixed" class="ui-bar" data-fullscreen="true" data-tap-toggle="false" >
+              <div id="buttons">
+                    <a href="index.html#map" class="responsive-button" data-role="button" data-icon="location">Map</a>
+                    <a href="index.html#routes" class="responsive-button" data-role="button" data-icon="bullets">Routes</a>
+                    <a href="index.html#about" class="responsive-button" data-role="button" data-icon="info">About</a>
+
+              </div> <!-- buttons -->
+          </div> <!-- header -->
+
+            <div id="mapid" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0">
+            </div><!-- mapid -->
+
+              <script src="js/cumbriaClassicCoaches.js"></script>
+
+          <div data-role="footer" data-position="fixed" data-tap-toggle="false" id="footer">
+              <h2>Cumbria Classic Coaches</h2>
+          </div> <!-- footer -->
+      </div> <!-- page -->
+<!-- ////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- Route Page -->
+      <div data-role="page" id="routes">
+        <div data-role="header" data-position="fixed" class="ui-bar" data-fullscreen="true" data-tap-toggle="false">
+            <div id="buttons">
+                  <a href="index.html#map" data-role="button" data-icon="location">Map</a>
+                  <a href="index.html#routes" data-role="button" data-icon="bullets">Routes</a>
+                  <a href="index.html#about" data-role="button" data-icon="info">About</a>
+
+              </div> <!-- buttons -->
+         </div> <!-- header -->
+          <div data-role="main" class="ui-content" data-position="fixed">
+<div data-role="collapsible" data-collapsed="true">
+<h2>571 - Monday</h2>
+</div>
+<div data-role="collapsible" data-collapsed="true">
+<h2>574 - Tuesday</h2>
+</div>
+<div data-role="collapsible" data-collapsed="true">
+<h2>569 - Tuesday</h2>
+</div>
+<div data-role="collapsible" data-collapsed="true">
+<h2>572 - Wednesday</h2>
+<ul data-role="listview" data-inset="true">
+<li data-role="list-divider">Ravenstonedale</li>
+<li>
+<h2>1. Bus depot</h2>
+<p><strong>Out: </strong>10:10</p>
+<p><strong>Return: </strong> 16:40</p>
+</li>
+<li>
+<h2>2. Fat Lamb</h2>
+<p><strong>Out: </strong>10:15</p>
+<p><strong>Return: </strong> 16:38</p>
+</li>
+<li>
+<h2>3. Town Head</h2>
+<p><strong>Out: </strong>10:20</p>
+<p><strong>Return: </strong> 16:33</p>
+</li>
+<li>
+<h2>4. School</h2>
+<p><strong>Out: </strong>10:23</p>
+<p><strong>Return: </strong> 16:30</p>
+</li>
+<li data-role="list-divider">Kirkby Stephen</li>
+<li>
+<h2>5. Station</h2>
+<p><strong>Out: </strong>10:35</p>
+<p><strong>Return: </strong> 16:22</p>
+</li>
+<li>
+<h2>6. Square</h2>
+<p><strong>Out: </strong>10:45</p>
+<p><strong>Return: </strong> 16:15</p>
+</li>
+<li>
+<h2>7. Brough Clock</h2>
+<p><strong>Out: </strong>11:03</p>
+<p><strong>Return: </strong> 16:05</p>
+</li>
+<li>
+<h2>8. Middleton in Tees</h2>
+<p><strong>Out: </strong>11:45</p>
+<p><strong>Return: </strong> </p>
+</li>
+<li>
+<h2>9. Eggleston</h2>
+<p><strong>Out: </strong>12:05</p>
+<p><strong>Return: </strong> </p>
+</li>
+<li>
+<h2>10. Barnard Castle</h2>
+<p><strong>Out: </strong>12:25</p>
+<p><strong>Return: </strong> 15:30</p>
+</li>
+<li>
+<h2>11. Bowes Museum</h2>
+<p><strong>Out: </strong>12:30</p>
+<p><strong>Return: </strong> 15:35</p>
+</li>
+<li>
+</ul>
+</div>
+<div data-role="collapsible" data-collapsed="true">
+<h2>570 - Thursday</h2>
+</div>
+
+          </div> <!-- main -->
+          <div data-role="footer" id="footer">
+              <h2>Cumbria Classic Coaches</h2>
+          </div> <!-- footer -->
+      </div> <!-- page -->
+
+
+<!-- About Page -->
+      <div data-role="page" id="about">
+        <div data-role="header" data-position="fixed" class="ui-bar"  data-fullscreen="true" data-tap-toggle="false">
+            <div id="buttons">
+                  <a href="index.html#map" data-role="button" data-icon="location">Map</a>
+                  <a href="index.html#routes" data-role="button" data-icon="bullets">Routes</a>
+                  <a href="index.html#about" data-role="button" data-icon="info">About</a>
+
+              </div> <!-- buttons -->
+          </div> <!-- header -->
+          <div data-role="main" data-position="fixed" class="ui-content" id="about_content" data-position="fixed" >
+
+<div data-role="collapsible" data-collapsed="true">
+<h2>About</h2>
+<p>Cumbria Classic Coaches Ltd is a small friendly family run business specialising in running classic vintage half-cab buses and coaches. We have a fleet of five single deckers, two double deck buses and a vintage car.
+
+We operate three timetabled service routes, ALL YEAR from Kirkby Stephen to Barnard Castle and Brough to Kendal and seasonally from Kirkby Stephen to Hawes. Loved by tourists and locals alike, these are a great day out.
+
+Along with our heritage routes the vehicles are available for private hire; weddings, television and film props, birthday outings, anniversaries, school proms, corporate hospitality, themed and fancy dress events or even mystery tours! As the name suggests our bus depot is in Cumbria, we generally operate around the north of England and Southern Scotland but we have been down to Kent, up to Shetland and over to Norway and Denmark!</p>
+</div>
+<div data-role="collapsible" data-collapsed="true">
+<h2>Our Story</h2>
+<p>We started Cumbria Classic Coaches mid summer 1998, with a 1934 Leyland Lion. However, the first coach we bought was a 1949 Commer Commando with a Scottish Aviation body, this coach is being restored at the moment. We have since acquired a considerable fleet (in vintage terms)! When we started with the Leyland Lion we soon realised we would need a back up vehicle so we bought our first Leyland Tiger CWG 286, this came from the opposite end of the country from the Lion which came from Aberdeen, we had to traipse practically to Lands End for the Tiger. One thing leads to another and with the start of the Kendal Klipper service we needed another back up bus and so bought our other Leyland Tiger CRN 80, we were really angling for the bus Will owned first. Of course more buses means you take more work so soon we had need of another so we borrowed a Bristol L5G from Steve Morriss and also started working with Malcolm Hodgson and his Bristol Lodekka. After a couple of years Steve wanted his bus back and we wanted to buy a coach but could find nothing on the market until we heard that Stefan Torres was selling his vintage fleet…so we bought it. Two AEC half cabs, two Guys and a Commer! We didn’t need them all so sold on one of the AEC’s, the York Pullman to David Bowman of Carlisle. Unfortunately the Guy Warrior was not quite what the public looked for as well so that went. We ran the Commer for a couple of seasons but it really didn’t book out, being flat fronted didn’t make it stand out enough despite an absolutely fabulous interior.
+
+So we had the core fleet of 5 single deckers but the Leyland Lion wasn’t standing up to being used regularly the running gear just wasn’t up to it so we sold that and it currently resides at Glasgow Vintage Vehicle Trust. Then Malcolm announced his desire to sell the Bristol Lodekka as his back wasn’t up to the heavy steering and we had bookings for it for the next couple of years….so we bought that and most recently the success of the 572 service has means we have to take a double decker from Easter to November and occasionally have had even more than a decker full so along with Gordon Harris our long suffering help we got another decker.
+
+Cumbria Classic Coaches depot is at Bowber Head, a 16th century farmstead in the heart of Eden where you can indulge a love of buses and a love of the countryside – on site we have limited pitches available for touring caravans, camper vans and tents.
+
+Bowber Head lies below the rising slopes of the Howgill Fells, west of the road connecting Kirkby Stephen in the north and Sedbergh in the south and separating the Howgills from Wild Boar fell.</p>
+</div>
+<div data-role="collapsible" data-collapsed="true">
+<h2>Our People</h2>
+<p>
+<h5>Will Hamer</h5>
+Will has always had a passion for commercial vehicles and especially old lorries, buses and coaches. He owned a 1947 Leyland Tiger with Plaxton body from 1976 to 1980, but storage and vandalism problems forced him to sell it. Now life has changed and he has the time and space to turn his hobby into a business.
+
+<h5>Claire Hamer</h5>
+Claire keeps the house and home, as well as some very impressive typing skills and a degree in Tourism.
+
+<h5>Anthony Hamer</h5>
+Anthony is the best driver amongst us with both a PSV and a HGV there’s nothing he cannot handle. As if to prove this, he once owned an AEC Militant, tank recovery vehicle. His hobbies include holidaying round europe on his BMW touring bike and inventing. He also has skills in the garage and tackles all the bodywork.
+
+<h5>Alison Morriss (nee Hamer)</h5>
+Alison is the brains behind the operation, as well as designing the website and brochures, managing accounts and staff she also drives the buses. Another sideline is a signwriting company operated with her husband Steve (yes, another Steve Morriss!).  Oh and they have two children.</p>
+</div>
+<div data-role="collapsible" data-collapsed="true">
+<h2>Contact</h2>
+<p>For any comments, questions or enquiries, please get in touch using the following details<br/><br/>
+
+E-mail: enquiries@cumbriaclassiccoaches.co.uk<br/><br/>
+
+Phone: +44 (0) 15396-23254<br/>
+Fax: +44 (0) 15396-23254<br/><br/>
+
+Address:<br/>
+Cumbria Classic Coaches<br/>
+Bowber Head<br/>
+Ravenstonedale<br/>
+Kirkby Stephen<br/>
+Cumbria<br/>
+CA17 4NL<p/>
+</div>
+          </div> <!-- main -->
+          <div data-role="footer" id="footer">
+              <h2>Cumbria Classic Coaches</h2>
+          </div> <!-- footer -->
+    </div> <!-- page -->
+
+<!--<script type="text/javascript" src="cordova.js"></script>-->
+
+<!--Ravenstonedale //////////////////////////////////////////////  -->
+<div data-role="page" id="Ravenstonedale">
+    <div data-role="header" data-position="fixed" class="ui-bar" data-fullscreen="true" data-tap-toggle="false" >
+        <a href="index.html" data-icon="delete" class="ui-btn-right"></a>
+        <h2>Ravenstonedale</h2>
+      </div> <!-- header -->
+  <div data-role="main" data-position="fixed" class="ui-content" id="about_content" data-position="fixed" >
+<p>"Ravenstonedale is an unspoiled picturesque village lying at the foot of the Howgill fells in Cumbria. Nearby is the village of Newbiggin-on-Lune.
+
+These villages together with the farms and homes scattered around them form the parish of Ravenstonedale which recently became part of the Yorkshire Dales National Park.
+
+It is a great place to spend your holiday. Hotels, B&B, self catering available.
+
+This community website contains 800 pages and 9,000 pictures of Ravenstonedale. Enjoy!"
+-
+ </p>
+  </div> <!-- main -->
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" id="footer">
+                <h2>Cumbria Classic Coaches</h2>
+        </div> <!-- footer -->
+</div> <!-- page -->
+<!--Kirkby Stephen //////////////////////////////////////////////  -->
+<div data-role="page" id="Kirkby">
+    <div data-role="header" data-position="fixed" class="ui-bar" data-fullscreen="true" data-tap-toggle="false" >
+      <a href="index.html" data-icon="delete" class="ui-btn-right"></a>
+      <h2>Kirkby Stephen</h2>
+    </div> <!-- header -->
+<div data-role="main" data-position="fixed" class="ui-content" id="about_content" data-position="fixed" >
+<p>Kirkby Stephen Page </p>
+</div> <!-- main -->
+      <div data-role="footer" data-position="fixed" data-tap-toggle="false" id="footer">
+                        <h2>Cumbria Classic Coaches</h2>
+      </div> <!-- footer -->
+</div> <!-- page -->
+<!--Brough //////////////////////////////////////////////  -->
+<div data-role="page" id="Brough">
+    <div data-role="header" data-position="fixed" class="ui-bar" data-fullscreen="true" data-tap-toggle="false" >
+      <a href="index.html" data-icon="delete" class="ui-btn-right"></a>
+      <h2>Brough</h2>
+    </div> <!-- header -->
+<div data-role="main" data-position="fixed" class="ui-content" id="about_content" data-position="fixed" >
+<p>Brough </p>
+</div> <!-- main -->
+      <div data-role="footer" data-position="fixed" data-tap-toggle="false" id="footer">
+                                <h2>Cumbria Classic Coaches</h2>
+      </div> <!-- footer -->
+</div> <!-- page -->
+<!--Middleton in Teesdale //////////////////////////////////////////////  -->
+<div data-role="page" id="Middleton">
+    <div data-role="header" data-position="fixed" class="ui-bar" data-fullscreen="true" data-tap-toggle="false" >
+      <a href="index.html" data-icon="delete" class="ui-btn-right"></a>
+      <h2>Middleton in Teesdale</h2>
+      </div> <!-- header -->
+  <div data-role="main" data-position="fixed" class="ui-content" id="about_content" data-position="fixed" >
+<p>Middleton  Page </p>
+  </div> <!-- main -->
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" id="footer">
+                <h2>Cumbria Classic Coaches</h2>
+        </div> <!-- footer -->
+</div> <!-- page -->
+<!--Eggleston //////////////////////////////////////////////  -->
+<div data-role="page" id="Eggleston">
+    <div data-role="header" data-position="fixed" class="ui-bar" data-fullscreen="true" data-tap-toggle="false" >
+      <a href="index.html" data-icon="delete" class="ui-btn-right"></a>
+      <h2>Eggleston</h2>
+    </div> <!-- header -->
+<div data-role="main" data-position="fixed" class="ui-content" id="about_content" data-position="fixed" >
+<p>Eggleston Page </p>
+</div> <!-- main -->
+      <div data-role="footer" data-position="fixed" data-tap-toggle="false" id="footer">
+                        <h2>Cumbria Classic Coaches</h2>
+      </div> <!-- footer -->
+</div> <!-- page -->
+<!--Castle //////////////////////////////////////////////  -->
+<div data-role="page" id="Castle">
+    <div data-role="header" data-position="fixed" class="ui-bar" data-fullscreen="true" data-tap-toggle="false" >
+      <a href="index.html" data-icon="delete" class="ui-btn-right"></a>
+      <h2>Barnard Castle</h2>
+    </div> <!-- header -->
+<div data-role="main" data-position="fixed" class="ui-content" id="about_content" data-position="fixed" >
+<p>Castle Page </p>
+</div> <!-- main -->
+      <div data-role="footer" data-position="fixed" data-tap-toggle="false" id="footer">
+                                <h2>Cumbria Classic Coaches</h2>
+      </div> <!-- footer -->
+</div> <!-- page -->
+
+
+    </body>
+</html>
